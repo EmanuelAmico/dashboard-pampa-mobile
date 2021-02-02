@@ -24,6 +24,7 @@ nav{
 nav img{
     width: 2.4rem;
     height: 2.4rem;
+    z-index: 1;
 }
 nav .logo img{
     width: 10rem;
@@ -34,6 +35,9 @@ nav .logo{
     width: calc(100% - 1.6rem * 2);
     display: flex;
     justify-content: center;
+}
+nav .menu-boton{
+    z-index: 1;
 }
 .fondo{
     height: 16.4rem;
