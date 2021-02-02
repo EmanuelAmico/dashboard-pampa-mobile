@@ -19,6 +19,7 @@ nav{
     padding: 1.6rem;
     background-color: #145762;
     display: flex;
+    align-items: center;
 }
 nav img{
     width: 2.4rem;
@@ -29,10 +30,10 @@ nav .logo img{
     height: 1.98rem;
 }
 nav .logo{
-    flex-grow: 1;
+    position: absolute;
+    width: calc(100% - 1.6rem * 2);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .fondo{
     height: 16.4rem;
@@ -81,6 +82,7 @@ nav .logo{
 .contenido{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .tarjeta{
     width: 10.4rem;
