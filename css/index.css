@@ -142,7 +142,7 @@ nav .menu-boton{
         right: calc(10.4rem + 0.8rem * 2);
     }
 }
-@media (max-width: 375px){
+@media (max-width: 392px){
     .tarjeta.ultima{
         position: relative;
         right: calc(10.4rem / 2 + 0.8rem);
