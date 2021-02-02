@@ -82,11 +82,14 @@ nav .menu-boton{
 .alinear-contenido{
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: calc(7.5rem + 0.8rem);
 }
 .contenido{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0rem 0.8rem 0rem 0.8rem;
 }
 .tarjeta{
     width: 10.4rem;
@@ -98,10 +101,7 @@ nav .menu-boton{
     padding: 2.4rem 1.6rem 1.5rem 1.6rem;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px 0px rgba(0, 0, 0, 0.06);
     border-radius: 1rem;
-    position: relative;
-    bottom: calc(7.5rem + 0.8rem);
     background-color: white;
-    margin: 0.8rem 0.8rem;
 }
 .tarjeta img{
     width: 3.2rem;
@@ -128,22 +128,26 @@ nav .menu-boton{
     line-height: 3rem;
     letter-spacing: 0.015rem;
 }
-@media (max-width: 480px){
-    .tarjeta.ultima{
-        position: relative;
-        right: calc(10.4rem + 0.8rem * 2);
-    }
+.contenedor-tarjeta{
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
 }
-@media (max-width: 376px){
+@media (max-width: 392px){
+    .contenido{
+        justify-content: center;
+    }
+    .contenedor-tarjeta{
+        flex-grow: 1;
+    }
     .tarjeta.ultima{
         position: relative;
         right: calc(10.4rem / 2 + 0.8rem);
     }
 }
-@media (max-width: 256px){
+@media (max-width: 272px){
     .tarjeta.ultima{
-        position: relative;
-        right: 0;
+
     }
 }
 /* Limitaciones a arreglar: el tema del flex y la obligacion a usar un media con position para
