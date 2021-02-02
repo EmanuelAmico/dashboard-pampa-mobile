@@ -88,7 +88,7 @@ nav .menu-boton{
 .contenido{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
     padding: 0rem 0.8rem 0rem 0.8rem;
 }
 .tarjeta{
@@ -133,21 +133,19 @@ nav .menu-boton{
     justify-content: center;
     padding: 0.8rem;
 }
-@media (max-width: 392px){
+@media (max-width: 495px){
     .contenido{
         justify-content: center;
     }
-    .contenedor-tarjeta{
-        flex-grow: 1;
+    .tarjeta.ultima{
+        position: relative;
+        right: calc(10.4rem + 0.8rem * 2);
     }
+}
+@media (max-width: 375px){
     .tarjeta.ultima{
         position: relative;
         right: calc(10.4rem / 2 + 0.8rem);
-    }
-}
-@media (max-width: 272px){
-    .tarjeta.ultima{
-
     }
 }
 /* Limitaciones a arreglar: el tema del flex y la obligacion a usar un media con position para
