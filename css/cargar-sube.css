@@ -155,13 +155,16 @@ nav .menu-boton{
     line-height: 2.4rem;
     font-weight: 700;
     color: white;
-    padding: 1.3rem 9.4rem 1.2rem 9.5rem;
     background-color: rgb(20, 87, 98);
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 4.9rem;
+}
+.contenido a:hover{
+    transform: scale(1.01);
+    transition: 0.1s;
 }
 
 
