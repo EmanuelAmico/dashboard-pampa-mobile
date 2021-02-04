@@ -151,6 +151,11 @@ nav .menu-boton{
         right: calc(10.4rem / 2 + 0.8rem);
     }
 }
+@media (max-width: 255px){
+    .tarjeta.ultima{
+        position: static;
+    }
+}
 /* Limitaciones a arreglar: el tema del flex y la obligacion a usar un media con position para
 que me apile la ultima tarjeta al flex-start y todo el conjunto constantemente al medio.
 Ver por qué la fuente que toma no coincide con la del figma aún teniendo las mismas
