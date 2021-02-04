@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+/* 1rem = 10 px */
+a{
+    display: block;
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+nav{
+    padding: 1.6rem;
+    background-color: #145762;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 2.4rem;
+    height: 2.4rem;
+    z-index: 1;
+}
+nav .logo img{
+    width: 10rem;
+    height: 1.98rem;
+}
+nav .logo{
+    position: absolute;
+    width: calc(100% - 1.6rem * 2);
+    display: flex;
+    justify-content: center;
+}
+nav .menu-boton{
+    z-index: 1;
+}
+.fondo{
+    height: 9.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+.fondo::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #F86943;
+    position: absolute;
+    z-index: -1;
+}
+.fondo::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    background: url("../img/fondo-pampa.svg") repeat;
+    background-position: 0rem -5.5rem;
+    position: absolute;
+}
+.fondo h3{
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.fondo h4{
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 2rem 0rem 0rem 0rem;
+}
+.contenido{
+    background-color: white;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    position: relative;
+    bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.seleccion-historial{
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seleccion-historial input{
+    border: none;
+    outline: none;
+    position: relative;
+}
+.seleccion-historial input::-webkit-calendar-picker-indicator{
+    position: absolute;
+    left: 4rem;
+}
+.seleccion-historial input::-webkit-datetime-edit{
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0.04rem;
+    height: 1.8rem;
+    color: rgb(51, 51, 51);
+}
+.seleccion-historial h4{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0.015rem;
+    color: rgb(51, 51, 51);
+}
+.seleccion-historial .desde-hasta h4{
+    font-size: 1rem;
+    color: rgb(20, 87, 98);
+    line-height: 1.5rem;
+    letter-spacing: 0.015rem;
+}
+.desde-hasta{
+    padding: 0.8rem 1.6rem;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
+    width: 12rem;
+}
+.operacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 1.6rem 1.9rem 1.6rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.12);
+}
+.operacion .fecha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.2rem;
+    border-radius: 2rem;
+    background-color: rgba(35, 47, 52, 0.14);
+    font-size: 1.2rem;
+    line-height: 1.406rem;
+    letter-spacing: 0.04rem;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: rgb(51, 51, 51);
+    width: 5.8rem;
+}
+.operacion .detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.operacion .detalle h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.015rem;
+    color: rgb(51, 51, 51);
+}
+.operacion .detalle p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0.04rem;
+    color: rgb(101, 101, 101);
+}
+
+.operacion .importe{
+    display: flex;
+    align-items: center;
+}
+.operacion .importe h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.015rem;
+    margin-right: 1.6rem;
+    color: rgb(51, 51, 51);
+}
+.operacion .importe img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+

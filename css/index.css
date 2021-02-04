@@ -133,6 +133,9 @@ nav .menu-boton{
     justify-content: center;
     padding: 0.8rem;
 }
+.tarjeta:hover{
+    transform: scale(1.05);
+}
 @media (max-width: 495px){
     .contenido{
         justify-content: center;
